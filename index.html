@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script src="JS/script.js" defer></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About Me</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Project">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="Home" id="Home">
+    <div class="Home-text">
+      <h2>HI THERE!</h2>
+      <h1><span class="color1">I'M</span><span class="color2"> ASHWINI PETARE</span></h1>
+      <p>Career Objective:<br>
+        Seeking an opportunity to apply my technical skills, learn new technologies, and contribute to a dynamic team.</p>
+      <a href="#About" class="btn">About Me →</a>
+    </div>
+    <div class="image">
+      <img src="images/Myimage.png" alt="Profile">
+    </div>
+  </section>
+
+  <section class="About" id="About">
+    <div class="About-text">
+      <h1>About Me</h1>
+      <h3><span class="color2">Name: </span><span class="color1">Ashwini Petare</span></h3><br>
+      <h3><span class="color2">Age: </span><span class="color1">21</span></h3><br>
+      <h3><span class="color2">Qualification: </span><span class="color1">Btech (pursuing)</span></h3><br>
+      <h3><span class="color2">Email: </span><span class="color1">apetare@gmail.com</span></h3><br>
+      <h3><span class="color2">Address: </span><span class="color1">At Post Mahagaon Dist Yavatmal - 445205</span></h3><br><br>
+      <a href="assets/Ashwini_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section class="Education" id="Education">
+    <div class="Education-text">
+      <h1>Education</h1>
+      <div class="img">
+        <img src="images/Edu_image.png" alt="logo" class="Edu-img">
+        <span id="Edu-name"><span class="color1">SSC </span><span class="color4">(2018–2020)</span></span>
+        <p class="Description">I completed my 10th from Matoshree High School Mahagaon with 93.40%.</p>
+      </div>
+      <div class="img">
+        <img src="images/Edu_image.png" alt="logo" class="Edu-img">
+        <span id="Edu-name"><span class="color1">HSC </span><span class="color4">(2020–2022)</span></span>
+        <p class="Description">I completed my 12th from Matoshree Junior College Mahagaon with 85.47%.</p>
+      </div>
+      <div class="img">
+        <img src="images/Edu_image.png" alt="logo" class="Edu-img">
+        <span id="Edu-name"><span class="color1">BTECH </span><span class="color4">(2022–2026)</span></span>
+        <p class="Description">Pursuing B.Tech in CSE from SGGSIE&T with 7.89 CGPA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="Project" id="Project">
+    <div class="Project-text">
+      <h1>Projects</h1>
+      <h3>Pharmacy Management System</h3>
+      <div class="project-gallery">
+        <div class="project-img-box"><img class="Pr-img" src="images/LoginPage.png" alt="LoginPage"></div>
+        <div class="project-img-box"><img class="Pr-img" src="images/RegPage.png" alt="RegPage"></div>
+        <div class="project-img-box"><img class="Pr-img" src="images/WelcomePage.png" alt="WelcomePage"></div>
+        <div class="project-img-box"><img class="Pr-img" src="images/AddMed.png" alt="AddMed"></div>
+        <div class="project-img-box"><img class="Pr-img" src="images/UpdateMed.png" alt="UpdateMed"></div>
+        <div class="project-img-box"><img class="Pr-img" src="images/MedList.png" alt="MedList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Contact" id="Contact">
+    <div class="Contact-text">
+      <h1>Contact Me</h1><br>
+      <div class="contact-info">
+        <img src="images/Mail_img.png" class="icon" alt="gmail icon">
+        <h3><span class="color2">Email: </span><span class="color1">apetare97@gmail.com</span></h3>
+      </div><br>
+      <div class="contact-info">
+        <img src="images/Add_img.png" class="icon" alt="location icon">
+        <h3><span class="color2">Address: </span><span class="color1">At Post Mahagaon, Dist. Yavatmal - 445205</span></h3>
+      </div>
+    </div>
+    <br><hr>
+
+    <!-- ✅ Contact Form -->
+    <form class="contact-form" onsubmit="return sendEmail();">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefaf6;
+  color: #3d2b1f;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Gravitas;
+  color: #4d392d;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #5a4c42;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #c4975d;
+}
+
+.color1 {
+  color: #c4975d;
+}
+
+.color2 {
+  color: #3d2b1f;
+}
+
+.color3 {
+  color:#ff3700;
+}
+
+.color4{
+  color: black;
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #fdf7f0;
+  flex-wrap: wrap;
+}
+
+.Home-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.Home-text h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #c4975d;
+}
+
+.Home-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #3d2b1f;
+}
+
+.Home-text p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #7a6b60;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #ff3700;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  border-color: #3d2b1f;
+}
+
+.Home-image {
+  flex: 1;
+  text-align: center;
+}
+
+.Home-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #fdf7f0;
+  flex-wrap: wrap;
+}
+
+.About-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.About-text h3 {
+  font-weight: bolder;
+  font-size: 18px;
+  font-weight: 500;
+  color: #c4975d;
+}
+  
+
+.About-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #3d2b1f;
+}
+
+.Education {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #fdf7f0;
+  flex-wrap: wrap;
+}
+
+.Education-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #3d2b1f;
+}
+
+.Edu-img {
+  width: 60px;       
+  height: auto;      
+  margin-right: 15px; 
+  vertical-align: middle;
+}
+
+#Edu-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Description {
+  padding-left: 80px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+.Project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #fdf7f0;
+  flex-wrap: wrap;
+}
+
+.Project-text h1{
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #3d2b1f;
+}
+
+.Project-text h3 {
+  font-weight: bolder;
+  font-size: 22px;
+  font-weight: 500;
+  color:  #ff3700;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-img-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: rgb(250, 247, 247);
+}
+
+.Pr-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.Pr-img:hover {
+  transform: scale(1.02);
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 80px 60px;
+  background-color: #fdf7f0;
+  text-align: center;
+}
+
+.Contact-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #3d2b1f;
+}
+
+.Contact-text h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-info .icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 1 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #060606;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px 24px;
+  background-color: #ff3700;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-style: solid;
+  border-color: #ff3700;
+  border-radius: 30px;
+}
+
+.contact-form button:hover {
+  border-color: #3d2b1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
